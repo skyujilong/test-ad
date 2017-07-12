@@ -12,8 +12,10 @@ textareaEl.addEventListener('click',function(){
 },false);
 
 btn.addEventListener('click',function(e){
-    // console.log('click');
-    // console.log(textareaEl.value);
+    if(textareaEl.value=== ''){
+        alert('广告代码区域不能为空！！')
+        return;
+    }
     deployAd(document.querySelector('.ad'),textareaEl.value);
 },false);
 
