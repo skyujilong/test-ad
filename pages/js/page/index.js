@@ -16,7 +16,9 @@ btn.addEventListener('click',function(e){
         alert('广告代码区域不能为空！！')
         return;
     }
-    deployAd(document.querySelector('.ad'),textareaEl.value);
+    deployAd(document.querySelector('.ad'),textareaEl.value,{
+        height:100
+    });
 },false);
 
 

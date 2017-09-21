@@ -42,6 +42,8 @@ module.exports = function(el, text, options) {
                 height = height || 0;
                 iframe.style.height = height + 'px'
             },100);
+        }else{
+            iframe.style.height = options.height + 'px'
         }
     }
     iframe.addEventListener('load',onload,false);
